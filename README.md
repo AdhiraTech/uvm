@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
-                                  README
+                                                       README
 ----------------------------------------------------------------------------------
 
 UVM is a Hardware Verification Language Methodology built on System Verilog and is 
