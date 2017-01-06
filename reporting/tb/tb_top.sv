@@ -4,7 +4,7 @@
 // Description :  Top Level module to hold Test and Environment Objects  
 //-----------------------------------------------------------------------------
 
-`include "timescale.v"
+`timescale 1ns/1ps
 
 module top;
    import uvm_pkg::*;
