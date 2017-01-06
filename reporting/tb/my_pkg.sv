@@ -61,12 +61,6 @@ package my_pkg;
          super.new (name, parent);
       endfunction
 
-      virtual function void build_phase (uvm_phase phase);
-         //if (! uvm_config_db #(bit) :: set (this, "", "fatal", fatal)) begin
-         //   fatal = 0;
-         //end
-      endfunction
-
       virtual task run_phase (uvm_phase phase);
          super.run_phase (phase);
          report_old_style ();
@@ -148,6 +142,5 @@ package my_pkg;
  
       endfunction
    endclass
-
 endpackage
 
