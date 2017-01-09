@@ -286,7 +286,7 @@ class reg_env extends uvm_env;
    endfunction   
 endclass
 
-
+/* // trial test
 class my_reg_cbs extends uvm_reg_cbs;
    `uvm_object_utils (my_reg_cbs)
    
@@ -298,3 +298,4 @@ class my_reg_cbs extends uvm_reg_cbs;
       $display ("post write callback name=%s %0d 0x%0h", rw.get_name(), rw.kind, rw.value);
    endtask
 endclass 
+*/
