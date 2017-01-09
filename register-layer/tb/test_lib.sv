@@ -249,6 +249,7 @@ class reg_test8 extends base_test;
 endclass
 
 //--------------------------------- reg_test9 {{{1 -----------------------------------
+/* // under development
 class reg_test9 extends base_test;
    `uvm_component_utils (reg_test9)
    function new (string name="reg_test9", uvm_component parent);
@@ -276,3 +277,4 @@ class reg_test9 extends base_test;
       phase.drop_objection (this);
    endtask
 endclass
+*/
