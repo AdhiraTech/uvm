@@ -54,6 +54,7 @@ class my_env extends uvm_env;
 
 endclass
 
+// A simple test to contain our environment and run different type overrides
 class base_test extends uvm_test;
    `uvm_component_utils (base_test)
 
