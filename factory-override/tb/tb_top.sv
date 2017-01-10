@@ -67,11 +67,26 @@ class base_test extends uvm_test;
       super.build_phase (phase);
       m_top_env  = my_env::type_id::create ("m_top_env", this);
       
+`ifdef TYPE_BY_TYPE
       // Override all instances of "comp_v1" type by "comp_v2"
       factory.set_type_override_by_type (comp_v1::get_type(), comp_v2::get_type());
       
-//      factory.set_type_override_by_name ("comp_v1", "comp_v2");
-//      factory.set_inst_override_by_type (comp_v1::get_type(), comp_v2::get_type(), "uvm_test_top.my_env.m_comp_a");
+`elsif TYPE_BY_NAME
+      // Override all instances of type name "comp_v1" by type of name "comp_v2"
+      // Note that the type name should be given as a string
+      factory.set_type_override_by_name ("comp_v1", "comp_v2");
+      
+`elsif INST_BY_TYPE
+      // Override the specific instance mentioned in the string of original type "comp_v1" to "comp_v2"
+      // Note that the name of the particular instance should be given in hierarchical path, not the variable name
+      // Don't give uvm_test_top.m_top_env.m_comp_a  as this is the variable name, not the instance name
+      factory.set_inst_override_by_type (comp_v1::get_type(), comp_v2::get_type(), "uvm_test_top.m_top_env.mycomp_a");
+
+`elsif INST_BY_NAME
+      // Override the specific instance mentioned in the string of type "comp_v1" by type "comp_v2"
+      factory.set_inst_override_by_name ("comp_v1", "comp_v2", "uvm_test_top.m_top_env.mycomp_a");
+      
+`endif      
    endfunction : build_phase
 
    virtual function void end_of_elaboration_phase (uvm_phase phase);
