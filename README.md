@@ -12,3 +12,10 @@ This repo will host many code examples to illustrate different features and gene
 usage in UVM. Visit ChipVerify (www.chipverify.com) to learn more and post questions
 in our forum !
 
+<table>
+<tr>
+<td>factory-override</td>
+<td>Example of how to override components by each of the four set_*_override_by_* methods
+</tr>
+</table>
+
