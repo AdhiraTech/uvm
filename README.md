@@ -8,7 +8,7 @@ one of the most popular and leading HVLs used in the industry.</p>
 <p>You may download the base class libraries, source code, and reference guide from :
 <a target="_blank" href="http://accellera.org/downloads/standards/uvm">Accellera</a></p>
 
-<p>This repo will host many code examples to illustrate different features and general usage in UVM. Visit <a target="_blank" href="www.chipverify.com">ChipVerify</a> to learn more and post questions in our forum !</p>
+<p>This repo will host many code examples to illustrate different features and general usage in UVM. Visit <a target="_blank" href="http://chipverify.com">ChipVerify</a> to learn more and post questions in our forum !</p>
  
 <table style="font-size:small;">
   <tr>
