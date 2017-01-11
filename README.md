@@ -11,10 +11,10 @@ one of the most popular and leading HVLs used in the industry.</p>
 <p>This repo will host many code examples to illustrate different features and general usage in UVM. Visit <a target="_blank" href="www.chipverify.com">ChipVerify</a> to learn more and post questions in our forum !</p>
  
 <table style="font-size:small;">
-  <th>
-    <td>Tag</td>
-    <td>Desc.</td>
-  </th>
+  <tr>
+    <th>Tag</th>
+    <th>Desc.</th>
+  </tr>
   <tr>
     <td>factory-override</td>
     <td>Example of how to override components by each of the four <code>set_*_override_by_*</code> methods
