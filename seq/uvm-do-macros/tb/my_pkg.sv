@@ -73,6 +73,11 @@ package my_pkg;
    endclass
 
    // This is the main sequence that will be executed by the sequencer
+   // We'll try four macros one after the other 
+   // `uvm_do
+   // `uvm_do_with
+   // `uvm_do_pri
+   // `uvm_do_pri_with
    class seq1 extends uvm_sequence #(my_data);
       `uvm_object_utils (seq1)
       
