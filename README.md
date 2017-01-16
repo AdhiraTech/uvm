@@ -37,7 +37,7 @@ one of the most popular and leading HVLs used in the industry.</p>
   </tr>
   <tr>
     <td>virtual-sequence</td>
-    <td>Example of how to build and use a virtual sequence</td>
+    <td>Example of how to build and use a virtual sequence without a separate virtual sequencer</td>
   </tr>
     <tr>
     <td>virtual-sequencer</td>
