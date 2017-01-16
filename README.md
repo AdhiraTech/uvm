@@ -55,5 +55,9 @@ one of the most popular and leading HVLs used in the industry.</p>
     <td>seq</td>
     <td>Examples that explore creation and usage of uvm sequences and sequence items</td>
   </tr>
+  <tr>
+    <td>file-includes</td>
+    <td>Examples that show a few styles in which files can be arranged and included for compilation</td>
+  </tr>
 </table>
 
