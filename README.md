@@ -59,5 +59,8 @@ one of the most popular and leading HVLs used in the industry.</p>
     <td>file-includes</td>
     <td>Examples that show a few styles in which files can be arranged and included for compilation</td>
   </tr>
+  <tr>
+    <td>uvm-printer</td>
+    <td>Shows how to print UVM data objects, and different print format styles</td>
+  </tr>
 </table>
-
