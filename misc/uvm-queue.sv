@@ -63,3 +63,73 @@ module top;
    initial 
       run_test ("base_test");
 endmodule
+
+
+/* Simulation Log
+-----------------
+
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+----------------------------------
+Name    Type      Size  Value
+----------------------------------
+tmp     my_data   -     @2656
+  addr  integral  32    'h4e3698e8
+  data  integral  32    'h57f6ba30
+----------------------------------
+----------------------------------
+Name    Type      Size  Value
+----------------------------------
+tmp     my_data   -     @2689
+  addr  integral  32    'h2035c229
+  data  integral  32    'h43957b3d
+----------------------------------
+----------------------------------
+Name    Type      Size  Value
+----------------------------------
+tmp     my_data   -     @2697
+  addr  integral  32    'hc1c69371
+  data  integral  32    'hf5ec14fe
+----------------------------------
+----------------------------------
+Name    Type      Size  Value
+----------------------------------
+tmp     my_data   -     @2706
+  addr  integral  32    'heb9def5a
+  data  integral  32    'h1a3f24cb
+----------------------------------
+----------------------------------
+Name    Type      Size  Value
+----------------------------------
+tmp     my_data   -     @2715
+  addr  integral  32    'hdb42363a
+  data  integral  32    'h2111b453
+----------------------------------
+UVM_INFO ./tb/tb_top.sv(54) @ 0: uvm_test_top [QUEUE] Element[0] addr=0x4e3698e8 data=0x57f6ba30
+UVM_INFO ./tb/tb_top.sv(54) @ 0: uvm_test_top [QUEUE] Element[1] addr=0x2035c229 data=0x43957b3d
+UVM_INFO ./tb/tb_top.sv(54) @ 0: uvm_test_top [QUEUE] Element[2] addr=0xc1c69371 data=0xf5ec14fe
+UVM_INFO ./tb/tb_top.sv(54) @ 0: uvm_test_top [QUEUE] Element[3] addr=0xeb9def5a data=0x1a3f24cb
+UVM_INFO ./tb/tb_top.sv(54) @ 0: uvm_test_top [QUEUE] Element[4] addr=0xdb42363a data=0x2111b453
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    6
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[QUEUE]     5
+[RNTST]     1
+Simulation complete via $finish(1) at time 0 FS + 179                  
+
+*/
