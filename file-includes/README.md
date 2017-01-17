@@ -7,4 +7,7 @@
 <br>
 <b>Style2</b>
 <p>In this case we have put all the three agents as a package, and imported it in <i>my_pkg.sv</i>. Since <i>my_pkg.sv</i> and <i>agent_pkg.sv</i> are not included anywhere else we have to provide them to the compiler in addition to <i>tb_top.sv</i>.</p>
+<br>
+<b>Style3</b>
+<p>Here we skip creating any package or including any file within other files, unless required. Instead we provide a list of all the files to the compiler directly</p>
 
