@@ -26,5 +26,9 @@ this series focuses on how components can be connected together using TLM interf
     <td>tlm-501-ap</td>
     <td>How Analysis Ports can be used to distribute data to multiple components</td>
   </tr>
+  <tr>
+    <td>tlm-601-socket</td>
+    <td>Example of how to use TLM 2.0 sockets</td>
+  </tr>
 </table>
 
