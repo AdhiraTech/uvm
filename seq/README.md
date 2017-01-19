@@ -17,6 +17,6 @@
   </tr>
   <tr>
     <td>nested-seq</td>
-    <td>Example of a sequence starting another sequence</td>
+    <td>Example of a sequence starting another sequence via <code>start()</code> method</td>
   </tr>
 </table>
