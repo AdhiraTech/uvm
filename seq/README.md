@@ -15,4 +15,8 @@
     <td>uvm-do-macros</td>
     <td>Example of using <code>`uvm_do*</code> macros to start sequence items (alternative approach) </td>
   </tr>
+  <tr>
+    <td>nested-seq</td>
+    <td>Example of a sequence starting another sequence</td>
+  </tr>
 </table>
