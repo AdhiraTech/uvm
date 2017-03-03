@@ -71,11 +71,13 @@ package my_pkg;
 
       task reset_phase (uvm_phase phase);
          super.reset_phase (phase);
+         phase.raise_objection (phase);
          `uvm_info (get_type_name (), $sformatf ("Applying initial reset"), UVM_MEDIUM)
          this.vif.rstn = 0;
          repeat (20) @ (posedge vif.clk);
          this.vif.rstn = 1;
          `uvm_info (get_type_name (), $sformatf ("DUT is now out of reset"), UVM_MEDIUM)
+         phase.drop_objection (phase);
       endtask
 
       task main_phase (uvm_phase phase);
