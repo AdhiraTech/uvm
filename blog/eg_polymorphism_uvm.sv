@@ -107,3 +107,48 @@ module top;
    initial 
       run_test ("base_test");
 endmodule
+
+
+
+/* Simulation Log:  +define+NOCMPERR  +UVM_TESTNAME=derived_test
+----------------------------------------------
+UVM_INFO @ 0: reporter [RNTST] Running test derived_test...
+UVM_INFO /playground_lib/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+---------------------------------------
+Name          Type          Size  Value
+---------------------------------------
+uvm_test_top  derived_test  -     @1841
+  m_base_env  derived_env   -     @1913
+    m_comp    comp          -     @1945
+---------------------------------------
+
+UVM_INFO testbench.sv(42) @ 0: uvm_test_top.m_base_env.m_comp [COMP] Hello there !
+UVM_INFO /playground_lib/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COMP]     1
+[RNTST]     1
+[UVM/RELNOTES]     1
+[UVMTOP]     1
+
+Simulation complete via $finish(1) at time 0 FS + 231
+
+
+
+
+
+Simulation Log   :  +UVM_TESTNAME=derived_test 
+---------------------------------------------------------------
+m_base_env.m_comp.display (); 
+                      |
+ncvlog: *E,NOTCLM (testbench.sv,93|22): m_comp is not a class item.
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+
+
+*/
